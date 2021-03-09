@@ -17,6 +17,7 @@
     ],
     "require": {
         "php": "^7.3",
+        "ext-json": "*",
         "bensampo/laravel-enum": "^1.38",
         "illuminate/support": "^6.0"
     },
