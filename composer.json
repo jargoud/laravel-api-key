@@ -45,11 +45,8 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Jargoud\\LaravelApiKey\\LaravelApiKeyServiceProvider"
-            ],
-            "aliases": {
-                "LaravelApiKey": "Jargoud\\LaravelApiKey\\LaravelApiKeyFacade"
-            }
+                "Jargoud\\LaravelApiKey\\Providers\\LaravelApiKeyServiceProvider"
+            ]
         }
     }
 }
