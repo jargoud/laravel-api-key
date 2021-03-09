@@ -1,0 +1,54 @@
+{
+    "name": "jargoud/laravel-api-key",
+    "description": "Simple Laravel API key",
+    "keywords": [
+        "jargoud",
+        "laravel-api-key"
+    ],
+    "homepage": "https://github.com/jargoud/laravel-api-key",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jérémy Argoud",
+            "email": "jeremy.argoud@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "illuminate/support": "^6.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.0",
+        "phpunit/phpunit": "^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jargoud\\LaravelApiKey\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jargoud\\LaravelApiKey\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jargoud\\LaravelApiKey\\LaravelApiKeyServiceProvider"
+            ],
+            "aliases": {
+                "LaravelApiKey": "Jargoud\\LaravelApiKey\\LaravelApiKeyFacade"
+            }
+        }
+    }
+}
