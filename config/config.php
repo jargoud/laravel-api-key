@@ -1,8 +1,8 @@
 <?php
 
-/*
- * You can place your custom package configuration in here.
- */
 return [
-
+    'backpack' => [
+        'enabled' => false,
+        'model' => Jargoud\LaravelApiKey\Models\Backpack\ApiKey::class,
+    ],
 ];
