@@ -111,9 +111,9 @@ class ApiTokenGuard implements Guard
     /**
      * Get the token for the current request.
      *
-     * @return string
+     * @return string|null
      */
-    public function getTokenForRequest(): string
+    public function getTokenForRequest(): ?string
     {
         $token = $this->request->query($this->inputKey);
 
